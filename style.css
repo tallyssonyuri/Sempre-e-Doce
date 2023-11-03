@@ -1,0 +1,15 @@
+:root{
+    margin: 0;
+    padding: 0;
+  
+    /*CORES*/
+    --rosa-escuro: #DEB4C8;
+    --marrom: #8F7262;
+    --cor-hover: #272727;
+    
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
