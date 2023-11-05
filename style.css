@@ -17,7 +17,6 @@
   /* Produtos */
   .titulo {
     text-align: center;
-    font-size: 30pt;
     color: var(--marrom);
   }
   .produtos {
@@ -35,4 +34,33 @@
     border-radius: 20px;
     align-items: center;
     gap: 0 100px;
+  }
+  /* .produtos section:nth-child(n + 2) span:nth-child(2) {
+    display: block;
+  } */
+
+  .show-button {
+    background-color: var(--rosa-escuro);
+    border: 2px var(--cor-hover);
+    color: #000;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+  }
+
+  .show-button:hover {
+    cursor: pointer;
+  }
+
+  /* .show-button:{
+
+  } */
+
+  @media (max-width: 944px) {
+    #descricao1 {
+      display:none;
+    }
+    .show-button {
+      display: inline-block;
+    }
   }
