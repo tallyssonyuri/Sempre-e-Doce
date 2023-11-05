@@ -1,66 +1,70 @@
 :root{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+
+  /*CORES*/
+  --rosa-escuro: #DEB4C8;
+  --marrom: #8F7262;
+  --cor-hover: #272727;
   
-    /*CORES*/
-    --rosa-escuro: #DEB4C8;
-    --marrom: #8F7262;
-    --cor-hover: #272727;
-    
-  }
-  
-  body{
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  /* Produtos */
-  .titulo {
-    text-align: center;
-    color: var(--marrom);
-  }
-  .produtos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px 0;
-  }
+body{
+  margin: 0;
+  padding: 0;
+}
 
-  .produtos section {
-    display: flex;
-    padding: 5px 10px 0 10px;
-    /* border: 2px solid var(--rosa-escuro); */
-    border-radius: 20px;
-    align-items: center;
-    gap: 0 100px;
+/* Produtos */
+.titulo {
+  text-align: center;
+  color: var(--marrom);
+}
+.produtos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+.produtos section {
+  display: flex;
+  padding: 5px 10px 0 10px;
+  /* border: 2px solid var(--rosa-escuro); */
+  border-radius: 20px;
+  align-items: center;
+  gap: 0 100px;
+}
+/* .produtos section:nth-child(n + 2) span:nth-child(2) {
+  display: block;
+} */
+
+.show-button, .show-button2, .show-button3, .show-button4, .show-button5, .show-button6 {
+  background-color: var(--rosa-escuro);
+  border: 2px var(--cor-hover);
+  color: #000;
+  padding: 15px;
+  border-radius: 15px;
+  display: none;
+}
+
+.show-button:hover, .show-button2:hover, .show-button3:hover, .show-button4:hover,.show-button5:hover, .show-button6:hover {
+  cursor: pointer;
+}
+
+/* .show-button:{
+
+} */
+
+@media (max-width: 900px) {
+  #descricao1, #descricao2, #descricao3, #descricao4, #descricao5, #descricao6 {
+    display:none;
   }
-  /* .produtos section:nth-child(n + 2) span:nth-child(2) {
-    display: block;
-  } */
-
-  .show-button {
-    background-color: var(--rosa-escuro);
-    border: 2px var(--cor-hover);
-    color: #000;
-    padding: 15px;
-    border-radius: 15px;
-    display: none;
+  .show-button, .show-button2, .show-button3, .show-button4, .show-button5, .show-button6 {
+    display: inline-block;
   }
+}
 
-  .show-button:hover {
-    cursor: pointer;
-  }
+@media (max-width: 588px) {
 
-  /* .show-button:{
-
-  } */
-
-  @media (max-width: 944px) {
-    #descricao1 {
-      display:none;
-    }
-    .show-button {
-      display: inline-block;
-    }
-  }
+}
