@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
   
+  <link rel="icon" href="logo.ico" type="image/x-icon">
   <link href="style.css" rel="stylesheet" type="text/css"/>
 
   <title>Sempre é Doce</title>
@@ -14,31 +15,41 @@
 
 <body>
   <!--CABEÇALHO--> 
-  <header>
+  <header >
     <!--MENU DE NAVEGAÇÃO-->
-    <nav>
+    <nav class="nav-header">
       <!--Aqui é onde será colocado o menu da página, com o "Sobre Nós", "Local" e "Produtos" linkado-->
+      <div>
+        <a href="index.html"><img src="logo.png" alt="logo" id="logo"></a>
+      </div>
+      
+      <div class="nav-a">
+        <a data-scroll="sobre-nos" href="#sobre-nos" class="nav-scrool">Sobre Nós</a>
+        <a data-scroll="produtos" href="#produtos" class="nav-scrool">Produtos</a>
+        <a data-scroll="local" href="#local" class="nav-scrool">Local</a>
+        <a data-scroll="contato" href="#contato" class="nav-scrool">Contato</a>
+      </div>
     </nav>
   </header>
 
   <!--CONTEÚDO PRINCIPAL-->
   <main>
     <!--1° SESSÃO-->
-    <section>
+    section id="sobre-nos">
       <!--SOBRE NÓS-->
       
       <!--Uma breve descrição sobre a empresa e sobre o ramo que ela está inserida-->
     </section>
 
     <!--2° SESSÃO-->
-    <section>
+    <section id="produtos">
       <!--PRODUTOS-->
 
       <!--Fotos e descrição dos principais produtos-->
     </section>
 
      <!--3° SESSÃO-->
-    <section>
+    <section id="local">
       <!--LOCAL-->
 
       <!--Fotos e descrição onde a empresa está localizada-->
@@ -47,7 +58,7 @@
   </main>
 
   <!--RODAPÉ-->
-  <footer>
+  <footer id="contato">
     <!--CONTATO-->
 
     <!--Instagram-->
